@@ -20,6 +20,9 @@ __all__ = [
     'attention',
 ]
 
+import xformers.ops as xops
+from xformers.ops import memory_efficient_attention, fmha
+
 def flash_attention(
     q,
     k,
